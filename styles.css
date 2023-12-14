@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+section {
+    background-color: #EFF2F9;
+    height: 100vh;
+}
+
+.card {
+    padding: 60px 0 70px;
+    width: 1170px;
+    height: 800px;
+    background-color: #FFF;
+    box-shadow: 20px 20px 40px 0px rgba(81, 91, 117, 0.25);
+}
+
+.product-image-block {
+    border-right: 2px solid rgba(20, 20, 20, 0.15);
+    width: 540px;
+}
+
+.preview {
+    width: 80px;
+    height: 80px;
+    background-color: #FFF;
+}
+
+.preview.selected {
+    box-shadow: 8px 8px 16px 0px rgba(81, 91, 117, 0.25);
+}
+
+.product-info-block {
+    padding: 0 60px;
+}
+
+.main-title {
+    color: rgba(20, 20, 20, 0.90);
+    font-family: Montserrat;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 0.38px;
+}
+
+.subtitle {
+    color: rgba(20, 20, 20, 0.40);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+    margin-bottom: 60px;
+}
+
+.text {
+    color: rgba(20, 20, 20, 0.70);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+    margin-bottom: 65px;
+}
+
+.colors {
+    margin-bottom: 65px;
+}
+
+.title {
+    color: rgba(20, 20, 20, 0.40);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 4px rgba(81, 91, 117, 0.25));
+}
+
+.blue {
+    background-color: #013C7D;
+}
+
+.green {
+    background-color: #63CBA7;
+}
+
+.red {
+    background-color: #D52F29;
+}
+
+.black {
+    background-color: #141414;
+}
+
+.yellow {
+    background-color: #F2C723;
+}
+
+li.selected {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 2px 2px 6px 0px rgba(81, 91, 117, 0.25);
+}
+
+.quantity {
+    width: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(20, 20, 20, 0.80);
+    border: none;
+    appearance: none;
+    background-image: url('./img/ph_caret-down-bold.svg');
+    background-repeat: no-repeat;
+    background-position: right 0 top 50%;
+}
+
+.price {
+    color: rgba(20, 20, 20, 0.80);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.btn {
+    height: 70px;
+    width: 100%;
+    border: none;
+    background-color: #141414;
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.18px;
+    margin-top: 75px;
+}
