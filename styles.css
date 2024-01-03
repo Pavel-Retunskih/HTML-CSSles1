@@ -17,6 +17,9 @@ body {
 section {
     background-color: #EFF2F9;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -25,17 +28,33 @@ section {
     height: 800px;
     background-color: #FFF;
     box-shadow: 20px 20px 40px 0px rgba(81, 91, 117, 0.25);
+    display: flex;
 }
 
 .product-image-block {
     border-right: 2px solid rgba(20, 20, 20, 0.15);
-    width: 540px;
+    min-width: 540px;
+    display: flex;
+    flex-direction: column;
 }
-
+.main-image-wrapper{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preview-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
 .preview {
     width: 80px;
     height: 80px;
     background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .preview.selected {
@@ -44,6 +63,8 @@ section {
 
 .product-info-block {
     padding: 0 60px;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-title {
@@ -52,9 +73,11 @@ section {
     font-size: 38px;
     font-weight: 700;
     letter-spacing: 0.38px;
+    margin-bottom: 5px;
 }
 
 .subtitle {
+    display: block;
     color: rgba(20, 20, 20, 0.40);
     font-family: Lato;
     font-size: 16px;
@@ -74,6 +97,12 @@ section {
 
 .colors {
     margin-bottom: 65px;
+   
+}
+.colors-items{
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .title {
@@ -122,7 +151,16 @@ li.selected {
     box-shadow: 2px 2px 6px 0px rgba(81, 91, 117, 0.25);
 }
 
+.wrapper{
+    display: flex;
+}
+
+.wrapper > div{
+    flex-grow: 1;
+}
+
 .quantity {
+    font-family: inherit;
     width: 80px;
     font-size: 20px;
     font-weight: 500;
