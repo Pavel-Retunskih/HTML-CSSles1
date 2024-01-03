@@ -12,11 +12,12 @@ body {
     font-family: Rubik, sans-serif;
     font-style: normal;
     line-height: normal;
+    min-width: 375px;
 }
 
 section {
     background-color: #EFF2F9;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +26,7 @@ section {
 .card {
     padding: 60px 0 70px;
     width: 1170px;
-    height: 800px;
+    min-height: 800px;
     background-color: #FFF;
     box-shadow: 20px 20px 40px 0px rgba(81, 91, 117, 0.25);
     display: flex;
@@ -55,9 +56,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .preview.selected {
+    box-shadow: 8px 8px 16px 0px rgba(81, 91, 117, 0.25);
+}
+.preview:hover {
     box-shadow: 8px 8px 16px 0px rgba(81, 91, 117, 0.25);
 }
 
@@ -104,6 +110,14 @@ section {
     align-items: center;
     gap: 40px;
 }
+.colors-items > li{
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 50%;
+    transition: 0.2s;
+    cursor: pointer;
+}
 
 .title {
     color: rgba(20, 20, 20, 0.40);
@@ -141,13 +155,8 @@ section {
 .yellow {
     background-color: #F2C723;
 }
-
+.colors-items > li:hover,
 li.selected {
-    width: 30px;
-    height: 30px;
-    padding: 7px;
-    border-radius: 30px;
-    background: #FFF;
     box-shadow: 2px 2px 6px 0px rgba(81, 91, 117, 0.25);
 }
 
@@ -170,6 +179,7 @@ li.selected {
     background-image: url('./img/ph_caret-down-bold.svg');
     background-repeat: no-repeat;
     background-position: right 0 top 50%;
+    cursor: pointer;
 }
 
 .price {
@@ -191,4 +201,58 @@ li.selected {
     font-weight: 500;
     letter-spacing: 0.18px;
     margin-top: 75px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width: 1440px) {
+    .card{
+        width: 690px;
+        height: 1382px;
+        flex-direction: column;
+        margin: 40px;
+    }
+    .product-image-block {
+        border-right: none;
+        border-bottom: 2px solid rgba(20, 20, 20, 0.15);
+    }
+    .preview-wrapper{
+        margin: 60px 0 70px;
+    }
+    .product-info-block{
+        padding-top: 60px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .card{
+        margin: 15px;
+    }
+    .product-image-block{
+        min-width: auto;
+    }
+    .main-image{
+        width: 250px;
+    }
+    .product-info-block{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .main-title{
+        font-size: 34px;
+    }
+    .subtitle{
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+    .text{
+        font-size: 16px;
+        margin-bottom: 55px;
+    }
+    .btn{
+        margin-top: 65px;
+    }
 }
